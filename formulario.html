@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <label for="ckbox">
+                <img src="img/Apple_logo_black.svg" alt="logo">
+                <input type="checkbox" id="ckbox">  
+            </label>
+            
+            <ul class="nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="quienessomos.html">Quienes Somos</a>
+                    <ul>
+                        <li><a href="actuacion.html">Actuacion</a></li>
+                        <li><a href="#">Localizacion</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Publicaciones</a></li>
+                <li class="noborder"><a href="formulario.html">Contacto</a></li>
+            </ul>
+        </header>
+        <nav>
+            <form class="buscar">
+                <input type="text" name="buscar" placeholder="Buscar...">
+                <input type="submit" value="Buscar">
+            </form>
+        </nav>
+        <div class="dentro4">
+            <form action="mailto:santimuner9@gmail.com" method="get">
+                <header>
+                    <h3>HOJA DE INSCRIPCIÓN</h3>
+                    <h3>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h3>
+                </header>   
+                <fieldset class="personlaes">
+                    <legend>Datos personales(*)</legend>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+
+                    <label for="dni">DNI:</label>
+                    <input type="text" name="dni" id="dni" maxlength="9">
+
+                    <label for="nacimiento">Nacido/a en:</label>
+                    <input type="text" name="nacimiento" id="nacimiento">
+
+                    <label for="provincia">Provincia:</label>
+                    <select name="provincia" id="provincia">
+                        <option value="1">Madrid</option>
+                        <option value="2">Barcelona</option>
+                        <option value="3">Valencia</option>
+                        <option value="4">Murcia</option>
+                    </select>
+                    
+                    <label for="fnaci">Fecha nacimiento (dd/mm/aaaa):</label>
+                    <input type="date" name="fnaci" id="fnaci">
+
+                    <label for="domicilio">Domicilio (Calle, plaza y número):</label>
+                    <input type="text" name="domicilio" id="domicilio">
+
+                    <label for="cp">Código Postal:</label>
+                    <input type="text" name="cp" id="cp" maxlength="5">
+
+                    <label for="localidad">Localidad:</label>
+                    <input type="text" name="localidad" id="localidad">
+
+                    <label for="provincia">Provincia:</label>
+                    <select name="provincia" id="provincia">
+                        <option value="1">Madrid</option>
+                        <option value="2">Barcelona</option>
+                        <option value="3">Valencia</option>
+                        <option value="4">Murcia</option>
+                    </select>
+
+                    <label for="tel">Telefono:</label>
+                    <input type="tel" name="tel" id="tel" maxlength="9">
+                </fieldset>
+                <fieldset>
+                    <legend>Resquisitos de acceso</legend>
+
+                    <input type="radio" name="acceso" id="directo">Directo
+                        <div>
+                            <label for="logse">
+                            <input type="radio" name="directo" id="logse">Bachillerato LOGSE. Modalidad:
+                            </label>
+                            <input type="text" name="directo" id="logsetext">
+
+                            <input type="radio" name="directo" id="experimental">Bachillerato experimental:
+                            
+                            <label for="cou">
+                            <input type="radio" name="directo" id="cou">COU. Opción:
+                            </label>
+                            <input type="text" name="directo" id="cou">
+
+                            <input type="radio" name="directo" id="fp2">FP2
+
+                            <label for="otros">
+                            <input type="radio" name="directo" id="otros">Otros (especifique):
+                            </label>
+                            <input type="text" name="directo" id="otros">
+                            
+                        </div>
+                    <input type="radio" name="acceso" id="prueba">Mediante prueba
+
+                </fieldset>
+                <fieldset>
+                    <legend>Solicitud</legend>
+                    <p>El/la ue suscribe desea ser admitido en este centro para cursar
+                        el ciclo formativo de grado superior:
+                    </p>
+                    <label for="ciclo">Ciclo formativo:</label>
+                    <select name="ciclo" id="ciclo">
+                        <option value="1">DAW</option>
+                        <option value="2">DAM</option>
+                        <option value="3">ASIR</option>
+                    </select>
+                    <label>Ciclos formativos</label>
+                    <input type="text">
+                    <label>Centros</label>
+                    <input type="text">
+                    <label>Localidad</label>
+                    <input type="text">
+                    <label for="modalidad">Modalidad de horario especial (marque)
+                        <input type="checkbox" id="modalidad">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Documentación presentada</legend>
+                    <input type="checkbox" name="fotocopia" id="fotocopia">Fotocopia DNI
+                    <input type="checkbox" name="certificado" id="certificado">Certificado académico
+                    <label for="otrosdoc">
+                    <input type="checkbox" name="otrosdoc" id="otrosdoc">Otros documentos (especifique):
+                    </label>
+                    <input type="text" name="otrosdoc" id="otrosdoc">
+                </fieldset>
+                <fieldset>
+                    <legend>Comunicación</legend>
+                    <p>De acuerdo con el artículo 42.2 de la Ley 30/1992, de 26 de noviembre,
+                    de Régimen Jurídico de las Administraciones Públicas y del Procedimiento 
+                    Común, según la nueva redacción de la Ley 4/1999, de 13 de ener, se informa que:
+                    </p>
+                    <ul>
+                        <li>
+                            El plazo máximo para resolver la presente solicitud es 
+                            de 3 meses desde la fecha en que haya tenido entrada en 
+                            el registro del órgano competente para la tramitación, 
+                            sin perjuicio de lo previsto en el artículo 42.5 de 
+                            la misma ley.
+                        </li>
+                        <li>
+                            El efecto que producirá el silencio administrativo 
+                            si transcurre el plazo sin que se haya dictado y notificado 
+                            la resolución correspondiente, es desestimatorio de la solicitud.
+                        </li>
+                    </ul>
+                    <label>
+                        <input type="text">,
+                        <input type="text"> de
+                        <input type="text"> de 
+                        <select name="fecha" id="fehca">
+                            <option value="1">2004</option>
+                            <option value="2">2003</option>
+                            <option value="3">2002</option>
+                            <option value="4">2001</option>
+                            <option value="5">2000</option>
+                            <option value="6">1999</option>
+                            <option value="7">1998</option>
+                            <option value="8">1997</option>
+                            <option value="9">1996</option>
+                        </select>
+                        <p>La persona solicitante</p>
+                        <p>Firma</p>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <p>(") Los datos personales contenidos en este impreso podrán 
+                         ser incluidos en un fichero para su tratamiento por la 
+                            Conselleria de Cultura y Educación, en el uso; de las 
+                            funciones propias que tiene atribuidas en el ámbito de 
+                            sus competencias, pudiendo dirigirse a cualquier órgano 
+                            de la misma para ejercitarlos derechos de acceso, 
+                            rectificación, cancelación y oposición, según lo dispuesto 
+                            en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección 
+                            de Datos de Carácter: Personal (BOE núm 298, de 14 de diciembre
+                        de 1999).</p>
+                </fieldset>
+                <footer>
+                    <h3>DIRECTOR/A O TITULAR DEL CENTRO</h3>
+                </footer>
+            </form>
+        </div>
+        <footer>
+            <p>Convierte en uno de nosotros</p>
+        </footer>
+    </div>
+</body>
+</html>
